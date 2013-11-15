@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher" />
+
+    <Button
+        android:id="@+id/btnAddDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addDocente"
+        android:text="@string/add"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnListarDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listarDocente"
+        android:text="@string/list"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnEditDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editDocente"
+        android:text="@string/edit"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDeleteDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="eliminarDocente"
+        android:text="@string/delete"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnMateria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_title"
+        android:onClick="asignarMateria"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_sms" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call" />
+
+    <Button
+        android:id="@+id/btnMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_mail" />
+
+</LinearLayout>

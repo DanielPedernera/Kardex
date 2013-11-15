@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblMaterias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione Materia:" />
+
+        <Spinner
+            android:id="@+id/cboxMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lblParalelos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione paralelo:" />
+
+        <Spinner
+            android:id="@+id/cboxParalelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnAceptarIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="adicionar"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnFinalizarIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="finalizar"
+            android:text="@string/end" />
+
+        <ListView
+            android:id="@+id/listInscritas"
+            android:layout_width="match_parent"
+            android:layout_height="302dp" >
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

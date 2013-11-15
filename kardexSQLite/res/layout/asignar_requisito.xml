@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esta materia:" />
+
+    <Spinner
+        android:id="@+id/cboxRequisito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblMaterias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="es prerequisito de:" />
+
+    <Spinner
+        android:id="@+id/cboxMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnFinalizarIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="asignarPrerequisito"
+        android:text="@string/ok" />
+
+</LinearLayout>

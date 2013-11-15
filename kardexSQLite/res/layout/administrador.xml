@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtIdentificacionAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdminDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adicionarDocente"
+        android:text="Administrar Docente"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAdminEstudiante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adicionarEstudiante"
+        android:text="Administrar Estudiante"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAdminPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adicionarUsuario"
+        android:text="Aministrar Personal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAdminSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="semestre"
+        android:text="Administrar Semestre" />
+
+</LinearLayout>

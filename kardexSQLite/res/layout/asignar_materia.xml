@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher" />
+
+    <Spinner
+        android:id="@+id/cboxDocentesAsig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblMaterias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asignature" />
+
+    <Spinner
+        android:id="@+id/cboxMateriasAsig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paralelp" />
+
+    <Spinner
+        android:id="@+id/cboxParalelosAsig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnFinalizarIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="asignarMatDoc"
+        android:text="@string/ok" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblMaterias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asignature"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnAddMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addMat"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listDocs"
+        android:text="@string/list" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listEsts"
+        android:text="@string/list" />
+
+    <Button
+        android:id="@+id/btnEditMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editMat"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/btnDeleteMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteMat"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/btnFinalizarIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="paralelo"
+        android:text="@string/ap" />
+
+    <Button
+        android:id="@+id/btnAceptarIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/requisito" 
+        android:onClick="prerequisito"/>
+
+</LinearLayout>
