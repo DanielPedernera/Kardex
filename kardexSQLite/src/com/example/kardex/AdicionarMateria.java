@@ -16,6 +16,7 @@ public class AdicionarMateria extends Activity {
 	private EditText desc;
 	private String modo;
 	private String[]item;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
