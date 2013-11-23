@@ -61,5 +61,10 @@
     <string name="title_activity_asignar_requisito">AsignarRequisito</string>
     <string name="title_activity_asignar_materia">AsignarMateria</string>
     <string name="end">Finalizar</string>
+    <string name="DNI">CI</string>
+    <string name="Item">Item</string>
+    <string name="fec_nac">Fecha de nacimiento</string>
+    <string name="level">Grado</string>
+    
 
 </resources>

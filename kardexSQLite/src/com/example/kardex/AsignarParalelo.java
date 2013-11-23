@@ -51,17 +51,24 @@ public class AsignarParalelo extends Activity {
     	ContentValues c = new ContentValues();
 		c.put("Nombre", paralelo.getText().toString().trim());
 		c.put("Cupo",Integer.parseInt( cupo.getText().toString().trim()));
-		c.put("Dia1", dia1.getText().toString());
-		c.put("Horario1",horario1.getCurrentHour()+horario1.getCurrentMinute());
-		c.put("Duracion1", Integer.parseInt(duracion1.getText().toString().trim()));
-		c.put("Aula1",aula1.getText().toString().trim());
-		c.put("Dia2", dia2.getText().toString());
-		c.put("Horario2",horario2.getCurrentHour()+horario1.getCurrentMinute());
-		c.put("Duracion2", Integer.parseInt(duracion2.getText().toString().trim()));
-		c.put("Aula2",aula2.getText().toString().trim());
+		c.put("Horario1", dia1.getText().toString()+horario1.getCurrentHour()+horario1.getCurrentMinute()+aula1.getText().toString().trim());
+		c.put("Horario2", dia2.getText().toString()+horario2.getCurrentHour()+horario2.getCurrentMinute()+aula2.getText().toString().trim());
 		if (item!=null) {
 			c.put("Sigla", item[0]);
 		}
+		ContentValues ch1 = new ContentValues();
+		ch1.put("idHorario",dia1.getText().toString()+horario1.getCurrentHour()+horario1.getCurrentMinute()+aula1.getText().toString().trim());
+		ch1.put("Dia", dia1.getText().toString());
+		ch1.put("Horario",horario1.getCurrentHour()+horario1.getCurrentMinute());
+		ch1.put("Duracion", Integer.parseInt(duracion1.getText().toString().trim()));
+		ch1.put("Aula",aula1.getText().toString().trim());
+		ContentValues ch2 = new ContentValues();
+		ch2.put("idHorario",dia2.getText().toString()+horario2.getCurrentHour()+horario2.getCurrentMinute()+aula2.getText().toString().trim());
+		ch2.put("Dia", dia2.getText().toString());
+		ch2.put("Horario",horario2.getCurrentHour()+horario2.getCurrentMinute());
+		ch2.put("Duracion", Integer.parseInt(duracion2.getText().toString().trim()));
+		ch2.put("Aula",aula2.getText().toString().trim());
+		
 		try {
 			SQLiteDatabase db = SQLiteDatabase.openDatabase(
 					"/mnt/sdcard/kardex", null,
@@ -77,6 +84,9 @@ public class AsignarParalelo extends Activity {
 //							Toast.LENGTH_SHORT).show();
 //				}
 //			} else {
+					
+					db.insert("Horario",null , ch1);
+					db.insert("Horario", null, ch2);
 					db.insert("Paralelo", null, c);
 					Toast.makeText(getApplicationContext(),
 							"Datos insertados correctamente", Toast.LENGTH_SHORT)

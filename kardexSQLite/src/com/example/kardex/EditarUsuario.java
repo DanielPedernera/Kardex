@@ -64,7 +64,7 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 	}
 	public String[] listaDocentes(String V[],SQLiteDatabase db){
 		String[] columnas = new String[] { "idDocente", "Nombre",
-				"Paterno", "Materno", "Grado", "Titular" };
+				"Paterno", "Materno", "Grado", "Titular" ,"Item", "Ci", "Fec_nac"};
 		try {
 			Cursor cursor = db.query("Docente", columnas, null, null, null,
 					null, null);
@@ -75,14 +75,21 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 			int iMat = cursor.getColumnIndex("Materno");
 			int iGrado = cursor.getColumnIndex("Grado");
 			int iTitular = cursor.getColumnIndex("Titular");
+			int iItem = cursor.getColumnIndex("Item");
+			int iCi = cursor.getColumnIndex("Ci");
+			int iFec = cursor.getColumnIndex("Fec_nac");
 			for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor
 					.moveToNext()) {
 				resultado = resultado + cursor.getString(iCod) + "   "
 						+ cursor.getString(iNom) + "   "
 						+ cursor.getString(iPat) + "   "
 						+ cursor.getString(iMat) + "   "
+						+ cursor.getString(iCi) + "   "
+						+ cursor.getString(iFec) + "   "
+						+ cursor.getString(iItem) + "   "
 						+ cursor.getString(iGrado) + "   "
-						+ cursor.getString(iTitular) + "   " + "\n";
+						+ cursor.getString(iTitular) + "   "					
+						+ "\n";
 			}
 			V = resultado.split("\n");
 		} catch (Exception e) {
@@ -95,7 +102,7 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 	}
 	public String[] listaEstudiantes(String V[], SQLiteDatabase db){
 		String[] columnas = new String[] { "idEstudiante", "Nombre",
-				"Paterno", "Materno" };
+				"Paterno", "Materno", "Ci", "Matricula", "Fec_nac" };
 		try {
 			Cursor cursor = db.query("Estudiante", columnas, null, null,
 					null, null, null);
@@ -104,12 +111,19 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 			int iNom = cursor.getColumnIndex("Nombre");
 			int iPat = cursor.getColumnIndex("Paterno");
 			int iMat = cursor.getColumnIndex("Materno");
+			int iCi = cursor.getColumnIndex("Ci");
+			int iMatr = cursor.getColumnIndex("Matricula");
+			int iFec = cursor.getColumnIndex("Fec_nac");
 			for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor
 					.moveToNext()) {
 				resultado = resultado + cursor.getString(iCod) + "   "
 						+ cursor.getString(iNom) + "   "
 						+ cursor.getString(iPat) + "   "
-						+ cursor.getString(iMat) + "   " + "\n";
+						+ cursor.getString(iMat) + "   "
+						+ cursor.getString(iCi) + "   "
+						+ cursor.getString(iFec) + "   "
+						+ cursor.getString(iMatr) + "   "
+						+ "\n";
 			}
 			V = resultado.split("\n");
 		} catch (Exception e) {
@@ -121,7 +135,7 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 	}
 	public String[] listaAdmin(String V[], SQLiteDatabase db){
 		String[] columnas = new String[]{ "idAdmin", "Nombre",
-				"Paterno", "Materno" };
+				"Paterno", "Materno", "Item", "Ci", "Fec_nac" };
 		try {
 			Cursor cursor = db.query("Admin", columnas, null, null, null,
 					null, null);
@@ -130,12 +144,19 @@ public class EditarUsuario extends Activity implements OnItemClickListener {
 			int iNom = cursor.getColumnIndex("Nombre");
 			int iPat = cursor.getColumnIndex("Paterno");
 			int iMat = cursor.getColumnIndex("Materno");
+			int iItem = cursor.getColumnIndex("Item");
+			int iCi = cursor.getColumnIndex("Ci");
+			int iFec = cursor.getColumnIndex("Fec_nac");
 			for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor
 					.moveToNext()) {
 				resultado = resultado + cursor.getString(iCod) + "   "
 						+ cursor.getString(iNom) + "   "
 						+ cursor.getString(iPat) + "   "
-						+ cursor.getString(iMat) + "   ";
+						+ cursor.getString(iMat) + "   "
+						+ cursor.getString(iCi) + "   "
+						+ cursor.getString(iFec) + "   "
+						+ cursor.getString(iItem) + "   ";
+						
 				String id = cursor.getString(iCod);
 				String[] col = new String[]{"idAcceso","tipoAcceso","permiso","idProp"};
 				Cursor cur = db.query("Acceso", col,"idAcceso like " + "'" + id + "'",null,null,null,null);

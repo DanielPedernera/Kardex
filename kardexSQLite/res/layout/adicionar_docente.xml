@@ -46,14 +46,51 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/code" />
+            android:text="@string/fec_nac" />
 
         <EditText
-            android:id="@+id/txtCodigoUsu"
+            android:id="@+id/txtFecNac"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10" />
 
+        <TextView
+            android:id="@+id/lblItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Item" />
+
+        <EditText
+            android:id="@+id/txtItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DNI" />
+
+        <EditText
+            android:id="@+id/txtCi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        
+        <TextView
+            android:id="@+id/lblLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/txtGrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone" />
+        
         <TextView
             android:id="@+id/lblTipo"
             android:layout_width="wrap_content"
