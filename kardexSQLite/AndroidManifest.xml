@@ -100,6 +100,10 @@
             android:name="com.example.kardex.AsignarMateria"
             android:label="@string/title_activity_asignar_materia" >
         </activity>
+        <activity
+            android:name="com.example.kardex.Auxiliatura"
+            android:label="@string/title_activity_auxiliatura" >
+        </activity>
     </application>
 
 </manifest>

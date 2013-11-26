@@ -12,11 +12,12 @@ import android.view.View;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AsignarMateria extends Activity implements OnItemSelectedListener{
-    Spinner docentes;
+	Spinner docentes;
     Spinner materias;
     Spinner paralelos;
     String triplas="";
@@ -31,6 +32,8 @@ public class AsignarMateria extends Activity implements OnItemSelectedListener{
 			SQLiteDatabase db = SQLiteDatabase.openDatabase(
 					"/mnt/sdcard/kardex", null,
 					SQLiteDatabase.CREATE_IF_NECESSARY);
+			
+			
 			String[] columnas = new String[] { "Sigla", "Descripcion"};	
 			String[] columnasD = new String[] { "idDocente", "Nombre",
 					"Paterno", "Materno", "Grado", "Titular" };	
@@ -95,6 +98,7 @@ public class AsignarMateria extends Activity implements OnItemSelectedListener{
 					.show();
 		}
 	}
+
 	public void asignarMatDoc(View v) {
 		String doc = buscarDocentes(docentes.getSelectedItem().toString(),docs);
 		String mat = buscarMateria(materias.getSelectedItem().toString());

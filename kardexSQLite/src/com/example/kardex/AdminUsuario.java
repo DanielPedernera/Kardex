@@ -24,10 +24,14 @@ public class AdminUsuario extends Activity {
 		Button bm = (Button) findViewById(R.id.btnEditDocente);
 		Button bd = (Button) findViewById(R.id.btnDeleteDocente);
 		Button bam = (Button) findViewById(R.id.btnMateria);
+		Button bda = (Button) findViewById(R.id.btnAux);
 		TextView titulo = (TextView)findViewById(R.id.txtTipo);
 		titulo.setText(tipo);
 		if (tipo.equals("Docente")) {
 			bam.setVisibility(0);
+		}
+		if (tipo.equals("Estudiante")) {
+			bda.setVisibility(0);
 		}
 		switch (permisos[permiso]) {
 		case 7:
@@ -97,6 +101,10 @@ public class AdminUsuario extends Activity {
 	}
 	public void asignarMateria(View v) {
 		Intent p = new Intent(this,AsignarMateria.class);
+		startActivity(p);
+	}
+	public void auxiliatura(View v){
+		Intent p = new Intent(this,Auxiliatura.class);
 		startActivity(p);
 	}
 

@@ -51,10 +51,12 @@
         android:visibility="gone" />
 
     <Button
-        android:id="@+id/btnSMS"
+        android:id="@+id/btnAux"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/send_sms" />
+        android:onClick="auxiliatura"
+        android:text="@string/auxiliatura"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnCall"
