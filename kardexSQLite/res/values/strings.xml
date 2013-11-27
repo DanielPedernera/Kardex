@@ -71,5 +71,7 @@
     <string name="SelectAsignature">Selecciones la materia:</string>
     <string name="SelectDoc">Seleccione el Docente responsable</string>
     <string name="item">Asigne el nro de item</string>
+    <string name="listDocAuxMat">Listar Docentes con [auxiliares+materias]</string>
+    <string name="title_activity_listar_doc_aux_mat">ListarDocAuxMat</string>
 
 </resources>

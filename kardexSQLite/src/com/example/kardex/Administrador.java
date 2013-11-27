@@ -78,4 +78,9 @@ public class Administrador extends Activity {
 		Intent p = new Intent(this,AdminSemestre.class);
 		startActivity(p);
 	}
+	
+	public void listDocAuxMat(View v){
+		Intent p = new Intent(this,ListarDocAuxMat.class);
+		startActivity(p);
+	}
 }

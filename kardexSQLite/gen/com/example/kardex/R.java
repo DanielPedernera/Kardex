@@ -24,7 +24,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080067;
+        public static final int action_settings=0x7f080068;
         public static final int btnAceptar=0x7f08000c;
         public static final int btnAceptarIns=0x7f080046;
         public static final int btnAddDocente=0x7f080039;
@@ -91,6 +91,7 @@ public final class R {
         public static final int listDocentes=0x7f08005d;
         public static final int listInscritas=0x7f080066;
         public static final int listMaterias=0x7f08005e;
+        public static final int listadeauxdocmat=0x7f080067;
         public static final int mitexto=0x7f080062;
         public static final int rbtnAcontrato=0x7f08001a;
         public static final int rbtnTitular=0x7f080019;
@@ -146,6 +147,7 @@ public final class R {
         public static final int estudiante=0x7f03000d;
         public static final int filasimple=0x7f03000e;
         public static final int inscripcion_materia=0x7f03000f;
+        public static final int listar_doc_aux_mat=0x7f030010;
     }
     public static final class menu {
         public static final int adicionar_materia=0x7f070000;
@@ -158,8 +160,9 @@ public final class R {
         public static final int editar_materia=0x7f070007;
         public static final int estudiante=0x7f070008;
         public static final int inscripcion_materia=0x7f070009;
-        public static final int main=0x7f07000a;
-        public static final int permisos=0x7f07000b;
+        public static final int listar_doc_aux_mat=0x7f07000a;
+        public static final int main=0x7f07000b;
+        public static final int permisos=0x7f07000c;
     }
     public static final class string {
         public static final int DNI=0x7f05003c;
@@ -195,6 +198,7 @@ public final class R {
         public static final int last_name=0x7f050010;
         public static final int level=0x7f05003f;
         public static final int list=0x7f050028;
+        public static final int listDocAuxMat=0x7f050046;
         public static final int logout=0x7f05001c;
         public static final int mail=0x7f050013;
         public static final int name=0x7f05000f;
@@ -227,6 +231,7 @@ public final class R {
         public static final int title_activity_editar_materia=0x7f050032;
         public static final int title_activity_estudiante=0x7f050019;
         public static final int title_activity_inscripcion_materia=0x7f050037;
+        public static final int title_activity_listar_doc_aux_mat=0x7f050047;
         public static final int title_activity_permisos=0x7f050029;
         public static final int type=0x7f050025;
         public static final int unofficial=0x7f050027;

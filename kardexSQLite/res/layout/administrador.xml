@@ -52,4 +52,11 @@
         android:onClick="semestre"
         android:text="Administrar Semestre" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="listDocAuxMat"
+        android:text="@string/listDocAuxMat" />
+
 </LinearLayout>

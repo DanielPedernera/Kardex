@@ -89,8 +89,11 @@ public class MainActivity extends Activity {
 							}
 
 						}
-						if (user.getText().toString().equals("PPD020791") && pass
-								.getText().toString().equals("123456")) {
+						/*if (user.getText().toString().equals("PPD020791") && pass
+								.getText().toString().equals("123456")) {*/
+						
+						if (user.getText().toString().equals("1") && pass
+								.getText().toString().equals("1")) {
 							// pass.setText(user.getText());
 							Intent p = new Intent(this, Administrador.class);
 							p.putExtra("permisos", permisos);
