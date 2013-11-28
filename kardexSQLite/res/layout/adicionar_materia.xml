@@ -1,40 +1,54 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnFinalizarIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:onClick="addMateria"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFinalizarIns"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="36dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDescripcion"
+        android:layout_alignParentLeft="true"
+        android:text="@string/description" />
+
+    <EditText
+        android:id="@+id/txtSigla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/txtTipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSigla"
+        android:layout_alignParentLeft="true"
         android:text="@string/sig" />
 
-        <EditText
-            android:id="@+id/txtSigla"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" >
-
-            <requestFocus />
-        </EditText>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/description" />
-
-        <EditText
-            android:id="@+id/txtDescripcion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10" />
-
-        <Button
-            android:id="@+id/btnFinalizarIns"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="addMateria"
-            android:text="@string/ok" />
-
-</LinearLayout>
+</RelativeLayout>

@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
     tools:context=".Docente" >
 
     <TextView
@@ -22,6 +23,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="22dp"
         android:layout_marginRight="14dp"
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
         android:text="@string/logout" />
 
 </RelativeLayout>

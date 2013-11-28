@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity" >
 
     <EditText
@@ -31,16 +32,6 @@
         android:inputType="textPassword"
         android:width="400dp" />
 
-    <Button
-        android:id="@+id/btnAceptar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/txtIdentificacionAdmin"
-        android:layout_below="@+id/txtPass"
-        android:layout_marginTop="45dp"
-        android:onClick="Aceptar"
-        android:text="@string/ok" />
-
     <TextView
         android:id="@+id/txtIdentificacionAdmin"
         android:layout_width="wrap_content"
@@ -50,5 +41,17 @@
         android:layout_marginTop="22dp"
         android:text="Logeate"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/boton"
+        android:onClick="Aceptar"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

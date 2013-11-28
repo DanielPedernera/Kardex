@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -27,6 +28,8 @@
         android:layout_height="wrap_content"
         android:onClick="adicionarDocente"
         android:text="Administrar Docente"
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
         android:visibility="gone" />
 
     <Button
@@ -35,6 +38,8 @@
         android:layout_height="wrap_content"
         android:onClick="adicionarEstudiante"
         android:text="Administrar Estudiante"
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
         android:visibility="gone" />
 
     <Button
@@ -43,6 +48,8 @@
         android:layout_height="wrap_content"
         android:onClick="adicionarUsuario"
         android:text="Aministrar Personal"
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
         android:visibility="gone" />
 
     <Button
@@ -50,13 +57,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="semestre"
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
         android:text="Administrar Semestre" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/boton"
         android:onClick="listDocAuxMat"
-        android:text="@string/listDocAuxMat" />
+        android:text="@string/listDocAuxMat"
+        android:textColor="@color/white" />
 
 </LinearLayout>

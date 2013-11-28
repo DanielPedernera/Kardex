@@ -42,6 +42,8 @@
     <string name="official">Titular</string>
     <string name="unofficial">A contrato</string>
     <string name="list">Listar</string>
+    <string name="listd">Listar Docente</string>
+    <string name="liste">Listar Estudiante</string>
     <string name="title_activity_permisos">Permisos</string>
     <string name="cancel">Cancelar</string>
     <string name="title_activity_admin_semestre">MainActivity</string>

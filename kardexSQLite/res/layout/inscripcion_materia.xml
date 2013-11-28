@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
+    android:background="@drawable/fondo"
     android:layout_height="wrap_content" >
 
     <LinearLayout
@@ -38,6 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="adicionar"
+            android:background="@drawable/boton"
+            android:textColor="@color/white"
             android:text="@string/add" />
 
         <Button
@@ -45,6 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
              android:onClick="finalizar"
+             android:background="@drawable/boton"
+            android:textColor="@color/white"
             android:text="@string/end" />
 
         <ListView
