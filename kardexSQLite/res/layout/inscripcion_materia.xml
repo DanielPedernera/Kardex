@@ -55,7 +55,7 @@
         <ListView
             android:id="@+id/listInscritas"
             android:layout_width="match_parent"
-            android:layout_height="302dp" >
+            android:layout_height="333dp" >
         </ListView>
     </LinearLayout>
 
