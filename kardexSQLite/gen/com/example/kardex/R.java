@@ -44,6 +44,7 @@ public final class R {
         public static final int boton2=0x7f020002;
         public static final int fondo=0x7f020003;
         public static final int ic_launcher=0x7f020004;
+        public static final int splash_screen=0x7f020005;
     }
     public static final class id {
         public static final int action_settings=0x7f090068;
@@ -170,6 +171,7 @@ public final class R {
         public static final int filasimple=0x7f03000e;
         public static final int inscripcion_materia=0x7f03000f;
         public static final int listar_doc_aux_mat=0x7f030010;
+        public static final int splash_screen=0x7f030011;
     }
     public static final class menu {
         public static final int adicionar_materia=0x7f080000;
