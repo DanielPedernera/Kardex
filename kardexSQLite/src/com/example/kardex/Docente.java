@@ -1,8 +1,10 @@
 package com.example.kardex;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.widget.TextView;
 
 public class Docente extends Activity {
@@ -17,6 +19,13 @@ public class Docente extends Activity {
 		if (!tipo.equals("")) {
 			titulo.setText(titulo.getText().toString() + tipo);
 		}
+	}
+	
+	public void aux(View v){
+		Intent p = new Intent(this,Auxiliares.class);
+		Bundle b = this.getIntent().getExtras();
+		p.putExtra("id",b.getString("id"));
+		startActivity(p);
 	}
 
 	@Override

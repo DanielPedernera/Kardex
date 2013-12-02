@@ -75,5 +75,7 @@
     <string name="item">Asigne el nro de item</string>
     <string name="listDocAuxMat">Listar Docentes con [auxiliares+materias]</string>
     <string name="title_activity_listar_doc_aux_mat">ListarDocAuxMat</string>
+    <string name="notas">Notas</string>
+    <string name="aux">Auxiliares asignados</string>
 
 </resources>

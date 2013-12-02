@@ -41,6 +41,13 @@ public class Estudiante extends Activity {
         p.putExtra("modo", "listar");
         startActivity(p);
     }
+    
+    public void notas(View v){
+    	Intent p= new Intent(this,Notas.class);
+        Bundle b = this.getIntent().getExtras();
+        p.putExtra("id", b.getString("id"));
+        startActivity(p);
+    }
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

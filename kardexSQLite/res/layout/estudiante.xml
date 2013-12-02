@@ -50,4 +50,16 @@
         android:textColor="@color/white"
         android:text="Materias Inscritas" />
 
+    <Button
+        android:id="@+id/btnNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_centerVertical="true"
+        android:text="Notas" 
+        android:background="@drawable/boton"
+        android:textColor="@color/white"
+        android:onClick="notas"/>
+
 </RelativeLayout>

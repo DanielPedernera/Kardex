@@ -47,7 +47,7 @@ public final class R {
         public static final int splash_screen=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f090068;
+        public static final int action_settings=0x7f09006a;
         public static final int btnAceptar=0x7f09000c;
         public static final int btnAceptarIns=0x7f090045;
         public static final int btnAddDocente=0x7f090039;
@@ -67,6 +67,7 @@ public final class R {
         public static final int btnListarDocente=0x7f09003a;
         public static final int btnMail=0x7f090040;
         public static final int btnMateria=0x7f09003d;
+        public static final int btnNotas=0x7f090062;
         public static final int btnVolEst=0x7f090060;
         public static final int button1=0x7f090008;
         public static final int button2=0x7f090042;
@@ -74,10 +75,10 @@ public final class R {
         public static final int cboxAsignatures=0x7f090003;
         public static final int cboxDoc=0x7f090005;
         public static final int cboxDocentesAsig=0x7f09004c;
-        public static final int cboxMateria=0x7f090063;
+        public static final int cboxMateria=0x7f090064;
         public static final int cboxMaterias=0x7f09005b;
         public static final int cboxMateriasAsig=0x7f09004d;
-        public static final int cboxParalelo=0x7f090065;
+        public static final int cboxParalelo=0x7f090066;
         public static final int cboxParalelosAsig=0x7f09004e;
         public static final int cboxRequisito=0x7f09005a;
         public static final int cboxStudents=0x7f090001;
@@ -103,7 +104,7 @@ public final class R {
         public static final int lblLevel=0x7f090015;
         public static final int lblMateria=0x7f09004f;
         public static final int lblMaterias=0x7f090043;
-        public static final int lblParalelos=0x7f090064;
+        public static final int lblParalelos=0x7f090065;
         public static final int lblPermissionsDocente=0x7f09001e;
         public static final int lblPermissionsEstudiante=0x7f090024;
         public static final int lblPermissionsPersonal=0x7f09002a;
@@ -112,10 +113,11 @@ public final class R {
         public static final int lblTituloDocente=0x7f09005c;
         public static final int lblTituloEstudiante=0x7f09005f;
         public static final int listDocentes=0x7f09005d;
-        public static final int listInscritas=0x7f090066;
+        public static final int listInscritas=0x7f090067;
         public static final int listMaterias=0x7f09005e;
-        public static final int listadeauxdocmat=0x7f090067;
-        public static final int mitexto=0x7f090062;
+        public static final int listView1=0x7f090069;
+        public static final int listadeauxdocmat=0x7f090068;
+        public static final int mitexto=0x7f090063;
         public static final int rbtnAcontrato=0x7f09001a;
         public static final int rbtnTitular=0x7f090019;
         public static final int rbtngTipo=0x7f090018;
@@ -171,7 +173,8 @@ public final class R {
         public static final int filasimple=0x7f03000e;
         public static final int inscripcion_materia=0x7f03000f;
         public static final int listar_doc_aux_mat=0x7f030010;
-        public static final int splash_screen=0x7f030011;
+        public static final int notas_materia=0x7f030011;
+        public static final int splash_screen=0x7f030012;
     }
     public static final class menu {
         public static final int adicionar_materia=0x7f080000;
@@ -202,6 +205,7 @@ public final class R {
         public static final int ap=0x7f060035;
         public static final int app_name=0x7f060000;
         public static final int asignature=0x7f06002f;
+        public static final int aux=0x7f06004b;
         public static final int auxiliatura=0x7f060042;
         public static final int back=0x7f060006;
         public static final int call=0x7f06000c;
@@ -228,6 +232,7 @@ public final class R {
         public static final int logout=0x7f06001c;
         public static final int mail=0x7f060013;
         public static final int name=0x7f06000f;
+        public static final int notas=0x7f06004a;
         public static final int number=0x7f060016;
         public static final int official=0x7f060026;
         public static final int ok=0x7f060003;

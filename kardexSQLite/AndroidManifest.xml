@@ -121,6 +121,14 @@
             android:name="com.example.kardex.ListarDocAuxMat"
             android:label="@string/title_activity_listar_doc_aux_mat" >
         </activity>
+        <activity
+            android:name="com.example.kardex.Notas"
+            android:label="@string/notas" >
+        </activity>
+        <activity
+            android:name="com.example.kardex.Auxiliares"
+            android:label="@string/aux" >
+        </activity>
     </application>
 
 </manifest>
